@@ -1,2 +1,2 @@
 # once-a-day
-一天一次gogogo
+一天一次go go go !!!
