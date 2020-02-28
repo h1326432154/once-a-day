@@ -1,4 +1,4 @@
-package d20200225
+package leetcode
 
 import "testing"
 
