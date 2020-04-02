@@ -22,14 +22,21 @@ var (
 
 // TestSumOfTwoNumber 解法1双重for
 func TestSumOfTwoNumber(t *testing.T) {
+	a := twoSum(nums, target)
+	t.Log(a)
+}
+
+func twoSum(nums []int, target int) []int {
+	l := len(nums)
+	out := make([]int, 2)
 	for i := 0; i < l; i++ {
 		for j := i + 1; j < l; j++ {
-			if i == j {
-				continue
-			}
 			if nums[i]+nums[j] == target {
-				t.Logf("值1为 %d,下标为 %d ,值2为 %d,下标为 %d", nums[i], i, nums[j], j)
+				out[0] = i
+				out[1] = j
+				return out
 			}
 		}
 	}
+	return out
 }
