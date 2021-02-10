@@ -1,217 +1,44 @@
-# LeetCode 题集
-
-## 1. 两数之和
-
-* 问题描述:
-
-    给定一个整数数组 nums 和一个目标值 target，请你在该数组中找出和为目标值的那两个整数，并返回他们的数组下标。你可以假设每种输入只会对应一个答案。但是，你不能重复利用这个数组中同样的元素。
-
-* 示例:
-    定 nums = [2, 7, 11, 15], target = 9
-    因为 nums[0] + nums[1] = 2 + 7 = 9
-    所以返回 [0, 1]
-
-* [题解](./leetcode-go/sum_test.go)
-
-## 2. 两数相加
-
-* 问题描述:
-
-    给出两个 非空 的链表用来表示两个非负的整数。其中，它们各自的位数是按照 逆序 的方式存储的，并且它们的每个节点只能存储 一位 数字。如果，我们将这两个数相加起来，则会返回一个新的链表来表示它们的和。您可以假设除了数字 0 之外，这两个数都不会以 0 开头。
-
-* 示例:
-
-    给定 nums = [2, 7, 11, 15], target = 9  
-    因为 nums[0] + nums[1] = 2 + 7 = 9  
-    所以返回 [0, 1]
-
-* [题解](./leetcode-go/sum2_test.go)
-
-## 3. 无重复字符最长子串
-
-* 问题描述:
-
-    给定一个字符串，找出其中最长没有重复子串的长度。
-
-* 示例:
-
-    给定字符串"abcabcbb"，最长不重复子串为"abc"，长度为3  
-    给定字符串"bbbbb"，最长不重复子串为"b"，长度为1  
-    给定字符串"pwwkew"，最长不重复子串为"wke"或"kew"，长度为3，注意子串必须要连续，"pwke"不符合要求  
-
-* [题解](./leetcode-go/longest_string_test.go)
-
-## 4. 寻找两个有序数组的中位数
-
-* 问题描述:
-
-    给定两个大小为 m 和 n 的有序数组 nums1 和 nums2。
-    请你找出这两个有序数组的中位数，并且要求算法的时间复杂度为 O(log(m + n))。
-    你可以假设 nums1 和 nums2 不会同时为空。
-
-* 示例 1:
-
-    nums1 = [1, 3]  
-    nums2 = [2]  
-    则中位数是 2.0  
-
-* 示例 2:
-
-    nums1 = [1, 2]  
-    nums2 = [3, 4]  
-    则中位数是 (2 + 3)/2 = 2.5  
-
-* [题解](./leetcode-go/median_test.go)
-
-## 4. 最长回文子串
-
-* 问题描述:
-
-    给定一个字符串 s，找到 s 中最长的回文子串。你可以假设 s 的最大长度为 1000。
-
-* 示例 1:
-
-    输入: "babad"  abba abcba
-    输出: "bab"  
-    注意: "aba" 也是一个有效答案。  
-
-* 示例 2:
-
-    输入: "cbbd"  
-    输出: "bb"
-
-* [题解](./leetcode-go/longest_palindrome_test.go)
-
-## 6. Z 字形变换
-
-* 问题描述:
-
-    将一个给定字符串根据给定的行数，以从上往下、从左到右进行 Z 字形排列。
-    比如输入字符串为 "LEETCODEISHIRING" 行数为 3 时，排列如下：  
-
-    ```.
-    L   C   I   R  
-    E T O E S I I G  
-    E   D   H   N
-    ```
-
-    ```.
-    0   4   8    12
-    1 3 5 7 9 11 13 15
-    2   6   10   14
-    ```
-
-    ```.
-    0     6       12
-    1   5 7    11 13
-    2 4   8 10    14
-    3     9       15
-    ```
-
-    之后，你的输出需要从左往右逐行读取，产生出一个新的字符串，比如："LCIRETOESIIGEDHN"。
-    请你实现这个将字符串进行指定行数变换的函数：
-    string convert(string s, int numRows);
-
-* 示例 1:
-
-    输入: s = "LEETCODEISHIRING", numRows = 3
-    输出: "LCIRETOESIIGEDHN"
-
-* 示例 2:
-
-    输入: s = "LEETCODEISHIRING", numRows = 4
-    输出: "LDREOEIIECIHNTSG"
-
-* [题解](./leetcode-go/convert_test.go)
-
-## 7. 整数反转
-
-* 问题描述:
-
-    给出一个 32 位的有符号整数，你需要将这个整数中每位上的数字进行反转。
-
-* 示例 1:
-
-输入: 123
-输出: 321
-
-* 示例 2:
-
-输入: -123
-输出: -321
-
-* 示例 3:
-
-输入: 120
-输出: 21
-
-* 注意:
-假设我们的环境只能存储得下 32 位的有符号整数，则其数值范围为 [−231,  231 − 1]。请根据这个假设，如果反转后整数溢出那么就返回 0。
-
-* [题解](./leetcode-go/reverse_test.go)
-
-## 8. 字符串转换整数 (atoi)
-
-* 问题描述:
-
-    请你来实现一个 atoi 函数，使其能将字符串转换成整数。
-    首先，该函数会根据需要丢弃无用的开头空格字符，直到寻找到第一个非空格的字符为止。
-    当我们寻找到的第一个非空字符为正或者负号时，则将该符号与之后面尽可能多的连续数字组合起来，作为该整数的正负号；假如第一个非空字符是数字，则直接将其与之后连续的数字字符组合起来，形成整数。
-    该字符串除了有效的整数部分之后也可能会存在多余的字符，这些字符可以被忽略，它们对于函数不应该造成影响。
-    注意：假如该字符串中的第一个非空格字符不是一个有效整数字符、字符串为空或字符串仅包含空白字符时，则你的函数不需要进行转换。
-    在任何情况下，若函数不能进行有效的转换时，请返回 0。
-    假设我们的环境只能存储 32 位大小的有符号整数，那么其数值范围为 [−231,  231 − 1]。如果数值超过这个范围，请返回  INT_MAX (231 − 1) 或 INT_MIN (−231) 。
-
-* 示例 1:
-
-输入: "42"
-输出: 42
-
-* 示例 2:
-
-输入: "   -42"
-输出: -42
-解释: 第一个非空白字符为 '-', 它是一个负号。
-     我们尽可能将负号与后面所有连续出现的数字组合起来，最后得到 -42 。
-
-* 示例 3:
-
-输入: "4193 with words"
-输出: 4193
-解释: 转换截止于数字 '3' ，因为它的下一个字符不为数字。
-
-* 示例 4:
-
-输入: "words and 987"
-输出: 0
-解释: 第一个非空字符是 'w', 但它不是数字或正、负号。
-     因此无法执行有效的转换。
-
-* 示例 5:
-
-输入: "-91283472332"
-输出: -2147483648
-解释: 数字 "-91283472332" 超过 32 位有符号整数范围。
-     因此返回 INT_MIN (−231)
-
-* [题解](./leetcode-go/atoi_test.go)
-
-## 9.圆圈中最后剩下的数字
-
-* 问题描述
-
-    0,1,,n-1这n个数字排成一个圆圈，从数字0开始，每次从这个圆圈里删除第m个数字。求出这个圆圈里剩下的最后一个数字。
-    例如，0、1、2、3、4这5个数字组成一个圆圈，从数字0开始每次删除第3个数字，则删除的前4个数字依次是2、0、4、1，因此最后剩下的数字是3。
-    限制：1 <= n <= 10^5  1 <= m <= 10^6
-
-* 示例 1：
-
-    输入: n = 5, m = 3
-    输出: 3
-
-* 示例 2：
-
-    输入: n = 10, m = 17
-    输出: 2
-
-* [题解](./leetcode-go/reverse_test.go)
+#
+
+## LeetCode 题集
+
+|序号|本地链接|LeetCode链接|关键词|
+|--|--|--|--|
+|1|[1. 两数之和](./leetcode-go/sum_test.go)|[leetcode](https://leetcode-cn.com/problems/two-sum/)||
+|2|[2. 两数相加](./leetcode-go/sum2_test.go)|[leetcode](https://leetcode-cn.com/problems/add-two-numbers/)||
+|3|[3. 无重复字符的最长子串](./leetcode-go/longest_string_test.go)|[leetcode](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)||
+|4|[4. 寻找两个正序数组的中位数](./leetcode-go/median_test.go)|[leetcode](https://leetcode-cn.com/problems/median-of-two-sorted-arrays/)||
+|5|[5. 最长回文子串](./leetcode-go/longest_palindrome_test.go)|[leetcode](https://leetcode-cn.com/problems/longest-palindromic-substring/)||
+|6|[6. Z 字形变换](./leetcode-go/convert_test.go)|[leetcode](https://leetcode-cn.com/problems/zigzag-conversion/)||
+|7|[7. 整数反转](./leetcode-go/reverse_test.go)|[leetcode](https://leetcode-cn.com/problems/reverse-integer/)||
+|8|[8. 字符串转换整数 (atoi)](./leetcode-go/atoi_test.go)|[leetcode](https://leetcode-cn.com/problems/string-to-integer-atoi/)||
+|9|[剑指 Offer 62. 圆圈中最后剩下的数字](./leetcode-go/reverse_test.go)|[leetcode](https://leetcode-cn.com/problems/yuan-quan-zhong-zui-hou-sheng-xia-de-shu-zi-lcof/)||
+|10|[11. 盛最多水的容器](./leetcode-go/container_with_most_water_test.go)|[leetcode](https://leetcode-cn.com/problems/container-with-most-water/)||
+|11|[283. 移动零](./leetcode-go/move_zeroes_test.go)|[leetcode](https://leetcode-cn.com/problems/move-zeroes/)||
+|12|[70. 爬楼梯](./leetcode-go/climbing_stairs_test.go)|[leetcode](https://leetcode-cn.com/problems/climbing-stairs/)||
+|13|[15. 三数之和](./leetcode-go/three_sum_test.go)|[leetcode](https://leetcode-cn.com/problems/3sum/)||
+|14|[989. 数组形式的整数加法](./leetcode-go/add_array_integer_test.go)|[leetcode](https://leetcode-cn.com/problems/add-to-array-form-of-integer/)||
+|15|[242. 有效的字母异位词](./leetcode-go/valid_anagram_test.go)|[leetcode](https://leetcode-cn.com/problems/valid-anagram/)||
+|16|[26. 删除排序数组中的重复项](./leetcode-go/remove_duplicates_test.go)|[leetcode](https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/)||
+|17|[1. 两数之和](./leetcode-go/two_sum_test.go)|[leetcode](https://leetcode-cn.com/problems/two-sum/)||
+|18|[66. 加一](./leetcode-go/plus_one_test.go)|[leetcode](https://leetcode-cn.com/problems/plus-one/)||
+|19|[189. 旋转数组](./leetcode-go/rotate_array_test.go)|[leetcode](https://leetcode-cn.com/problems/rotate-array/)||
+|20|[412. Fizz Buzz](./leetcode-go/fizz_buzz_test.go)|[leetcode](https://leetcode-cn.com/problems/fizz-buzz/)||
+|21|[21. 合并两个有序链表](./leetcode-go/merge_two_sorted_lists_test.go)|[leetcode](https://leetcode-cn.com/problems/merge-two-sorted-lists/solution/)||
+|22|[94.二叉树的中序遍历](./leetcode-go/binary_tree_traversal_test.go)|[leetcode](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/)||
+|23|[144. 二叉树的前序遍历](./leetcode-go/binary_tree_traversal_test.go)|[leetcode](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)||
+|24|[144. 二叉树的后序遍历](./leetcode-go/binary_tree_traversal_test.go)|[leetcode](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/)||
+|25|[144. 二叉树的层序遍历](./leetcode-go/binary_tree_traversal_test.go)|[leetcode](https://leetcode-cn.com/problems/binary-tree-level-order-traversal/)||
+|26|[236. 二叉树的最近公共祖先](./leetcode-go/binary_tree_traversal_test.go)|[leetcode](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)||
+|27|[589.N叉树的前序遍历](./leetcode-go/n_ary_tree_traversal_test.go)|[leetcode](https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal/)||
+|28|[590. N叉树的后序遍历](./leetcode-go/n_ary_tree_traversal_test.go)|[leetcode](https://leetcode-cn.com/problems/n-ary-tree-postorder-traversal/)||
+|29|[590. N叉树的后序遍历](./leetcode-go/n_ary_tree_traversal_test.go)|[leetcode](https://leetcode-cn.com/problems/n-ary-tree-postorder-traversal/)||
+|30|[剑指 Offer 40. 最小的k个数](./leetcode-go/n_ary_tree_traversal_test.go)|[leetcode](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/)||
+|31|[169. 多数元素](./leetcode-go/majority_element_test.go)|[leetcode](https://leetcode-cn.com/problems/majority-element/)||
+|32|[860. 柠檬水找零](./leetcode-go/lemonade_change_test.go)|[leetcode](https://leetcode-cn.com/problems/lemonade-change/)||
+|33|[529. 扫雷游戏](./leetcode-go/minesweeper_test.go)|[leetcode](https://leetcode-cn.com/problems/minesweeper/)||
+|34|[51. N 皇后](./leetcode-go/binary_tree_traversal_test.go)|[leetcode](https://leetcode-cn.com/problems/n-queens/)||
+|35|[127. 单词接龙](./leetcode-go/word_ladder_test.go)|[leetcode](https://leetcode-cn.com/problems/word-ladder/)||
+|36|[74. 搜索二维矩阵](./leetcode-go/search_a2d_matrix_test.go)|[leetcode](https://leetcode-cn.com/problems/search-a-2d-matrix/)||
+|37|[78. 子集](./leetcode-go/subsets_test.go)|[leetcode](https://leetcode-cn.com/problems/subsets/)||
+|38|[91. 解码方法](./leetcode-go/decode_ways_test.go)|[leetcode](https://leetcode-cn.com/problems/decode-ways/)|动态规划(DP)|
