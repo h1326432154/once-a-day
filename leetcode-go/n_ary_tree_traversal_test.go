@@ -1,4 +1,4 @@
-package week02
+package leetcode
 
 import "testing"
 

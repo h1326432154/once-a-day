@@ -32,13 +32,16 @@
 |26|[236. 二叉树的最近公共祖先](./leetcode-go/binary_tree_traversal_test.go)|[leetcode](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)||
 |27|[589.N叉树的前序遍历](./leetcode-go/n_ary_tree_traversal_test.go)|[leetcode](https://leetcode-cn.com/problems/n-ary-tree-preorder-traversal/)||
 |28|[590. N叉树的后序遍历](./leetcode-go/n_ary_tree_traversal_test.go)|[leetcode](https://leetcode-cn.com/problems/n-ary-tree-postorder-traversal/)||
-|29|[590. N叉树的后序遍历](./leetcode-go/n_ary_tree_traversal_test.go)|[leetcode](https://leetcode-cn.com/problems/n-ary-tree-postorder-traversal/)||
-|30|[剑指 Offer 40. 最小的k个数](./leetcode-go/n_ary_tree_traversal_test.go)|[leetcode](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/)||
-|31|[169. 多数元素](./leetcode-go/majority_element_test.go)|[leetcode](https://leetcode-cn.com/problems/majority-element/)||
-|32|[860. 柠檬水找零](./leetcode-go/lemonade_change_test.go)|[leetcode](https://leetcode-cn.com/problems/lemonade-change/)||
-|33|[529. 扫雷游戏](./leetcode-go/minesweeper_test.go)|[leetcode](https://leetcode-cn.com/problems/minesweeper/)||
-|34|[51. N 皇后](./leetcode-go/binary_tree_traversal_test.go)|[leetcode](https://leetcode-cn.com/problems/n-queens/)||
-|35|[127. 单词接龙](./leetcode-go/word_ladder_test.go)|[leetcode](https://leetcode-cn.com/problems/word-ladder/)||
-|36|[74. 搜索二维矩阵](./leetcode-go/search_a2d_matrix_test.go)|[leetcode](https://leetcode-cn.com/problems/search-a-2d-matrix/)||
-|37|[78. 子集](./leetcode-go/subsets_test.go)|[leetcode](https://leetcode-cn.com/problems/subsets/)||
-|38|[91. 解码方法](./leetcode-go/decode_ways_test.go)|[leetcode](https://leetcode-cn.com/problems/decode-ways/)|动态规划(DP)|
+|29|[剑指 Offer 40. 最小的k个数](./leetcode-go/n_ary_tree_traversal_test.go)|[leetcode](https://leetcode-cn.com/problems/zui-xiao-de-kge-shu-lcof/)||
+|30|[169. 多数元素](./leetcode-go/majority_element_test.go)|[leetcode](https://leetcode-cn.com/problems/majority-element/)||
+|31|[860. 柠檬水找零](./leetcode-go/lemonade_change_test.go)|[leetcode](https://leetcode-cn.com/problems/lemonade-change/)||
+|32|[529. 扫雷游戏](./leetcode-go/minesweeper_test.go)|[leetcode](https://leetcode-cn.com/problems/minesweeper/)||
+|33|[51. N 皇后](./leetcode-go/binary_tree_traversal_test.go)|[leetcode](https://leetcode-cn.com/problems/n-queens/)||
+|34|[127. 单词接龙](./leetcode-go/word_ladder_test.go)|[leetcode](https://leetcode-cn.com/problems/word-ladder/)||
+|35|[74. 搜索二维矩阵](./leetcode-go/search_a2d_matrix_test.go)|[leetcode](https://leetcode-cn.com/problems/search-a-2d-matrix/)||
+|36|[78. 子集](./leetcode-go/subsets_test.go)|[leetcode](https://leetcode-cn.com/problems/subsets/)||
+|37|[91. 解码方法](./leetcode-go/decode_ways_test.go)|[leetcode](https://leetcode-cn.com/problems/decode-ways/)|动态规划(DP)|
+|38|[64. 最小路径和](./leetcode-go/minimum_path_sum_test.go)|[leetcode](https://leetcode-cn.com/problems/minimum-path-sum/)|DP|
+|39|[621. 任务调度器](./leetcode-go/task_scheduler_test.go)|[leetcode](https://leetcode-cn.com/problems/task-scheduler/)|DP|
+|40|[1143. 最长公共子序列](./leetcode-go/longest_common_subsequence_test.go)|[leetcode](https://leetcode-cn.com/problems/longest-common-subsequence/)|DP|
+|41|[120. 三角形最小路径和](./leetcode-go/triangle_test.go)|[leetcode](https://leetcode-cn.com/problems/triangle/description/)|DP|

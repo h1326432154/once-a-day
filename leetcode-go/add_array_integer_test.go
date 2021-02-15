@@ -1,4 +1,4 @@
-package week01
+package leetcode
 
 import (
 	"fmt"
@@ -19,7 +19,7 @@ func addToArrayForm1(A []int, K int) []int {
 		lens = len(A)
 		add  int
 	)
-	A = reverse(A)
+	A = reverse1(A)
 	for i := 0; i < lens || K != 0; i, K = i+1, K/10 {
 		fmt.Println(i)
 		if i >= lens {
@@ -32,11 +32,11 @@ func addToArrayForm1(A []int, K int) []int {
 	if add > 0 {
 		A = append(A, add)
 	}
-	A = reverse(A)
+	A = reverse1(A)
 	return A
 }
 
-func reverse(sli []int) []int {
+func reverse1(sli []int) []int {
 	for i := 0; i < len(sli)/2; i++ {
 		sli[i], sli[len(sli)-1-i] = sli[len(sli)-1-i], sli[i]
 	}

@@ -1,4 +1,4 @@
-package week03
+package leetcode
 
 import (
 	"math"
